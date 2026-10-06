@@ -42,7 +42,7 @@ except ImportError:
 #  CONFIGURATION  — change these to match your setup
 # ═══════════════════════════════════════════════════════════
 
-MONGO_URI = "mongodb://localhost:27017"   # local MongoDB
+MONGO_URI = __import__("os").environ.get("MONGO_URI", "mongodb://localhost:27017")
 # MONGO_URI = "mongodb+srv://user:pass@cluster.mongodb.net"  # Atlas cloud
 
 DB_NAME   = "leo_fyp"   # database name
