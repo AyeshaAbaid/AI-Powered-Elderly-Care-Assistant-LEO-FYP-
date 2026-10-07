@@ -1548,7 +1548,7 @@ def _route_intent(text, components, username):
 # ═══════════════════════════════════════════════════════════════════
 app = FastAPI(
     title="LEO — AI Home Assistant API",
-    description="FYP 2024-25 | Deployed on AWS with CI/CD",
+    description="FYP 2024-25",
     version="2.0.0",
 )
 app.add_middleware(CORSMiddleware, allow_origins=["*"],
